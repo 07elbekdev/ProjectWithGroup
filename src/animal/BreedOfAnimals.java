@@ -1,5 +1,5 @@
 package animal;
 
-public enum PreedOfAnimals {
+public enum BreedOfAnimals {
     Boxers, Mastiff, German, Shepherds, Border, Collie
 }
