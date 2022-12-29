@@ -1,6 +1,10 @@
-public class Pork extends Animal implements AllAnimal{
+package animal;
+
+import animal.Animal;
+
+public class Pork extends Animal implements AllAnimal {
     public Pork(String name, int age, String color, String breed) {
-        super(name, age, color, breed);
+        super(name, age, color);
     }
 
     @Override

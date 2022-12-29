@@ -1,6 +1,8 @@
-public class Sheep extends Animal implements AllAnimal{
+package animal;
+
+public class Sheep extends Animal implements AllAnimal {
     public Sheep(String name, int age, String color, String breed) {
-        super(name, age, color, breed);
+        super(name, age, color);
     }
 
     @Override

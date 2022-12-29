@@ -1,6 +1,10 @@
+package animal;
+
+import animal.Animal;
+
 public class Horse extends Animal implements AllAnimal {
     public Horse(String name, int age, String color, String breed) {
-        super(name, age, color, breed);
+        super(name, age, color);
     }
 
     @Override

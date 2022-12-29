@@ -1,14 +1,14 @@
+package animal;
+
 public abstract class Animal {
     private String name;
     private int age;
     private String color;
-    private String breed;
 
-    public Animal(String name, int age, String color, String breed) {
+    public Animal(String name, int age, String color) {
         this.name = name;
         this.age = age;
         this.color = color;
-        this.breed = breed;
     }
     public String getName() {
         return name;
@@ -33,21 +33,16 @@ public abstract class Animal {
     public void setColor(String color) {
         this.color = color;
     }
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
     @Override
     public String toString() {
-        return "Animal [ " +
+        return "animal.Animal [ " +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", color='" + color + '\'' +
-                ", breed='" + breed + '\'' +
                 " ] ";
     }
+
+    public abstract void eating();
+
+    public abstract void sleeping();
 }

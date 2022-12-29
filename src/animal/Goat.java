@@ -1,6 +1,10 @@
-public class Goat extends Animal implements AllAnimal{
+package animal;
+
+import animal.Animal;
+
+public class Goat extends Animal implements AllAnimal {
     public Goat(String name, int age, String color, String breed) {
-        super(name, age, color, breed);
+        super(name, age, color);
     }
 
     @Override
