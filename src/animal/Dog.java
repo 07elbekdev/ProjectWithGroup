@@ -3,8 +3,15 @@ package animal;
 import animal.Animal;
 
 public class Dog extends Animal implements AllAnimal {
-    public Dog(String name, int age, String color, String breed) {
-        super(name, age, color);
+
+
+    public Dog(String name, int age, String color, PreedOfAnimals poroda) {
+        super(name, age, color, poroda);
+    }
+
+    @Override
+    public String toString() {
+        return "Dog"+super.toString();
     }
 
     @Override

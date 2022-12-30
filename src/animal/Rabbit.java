@@ -1,10 +1,16 @@
 package animal;
 
-import animal.Animal;
+public class
+Rabbit extends Animal implements AllAnimal {
 
-public class Rabbit extends Animal implements AllAnimal {
-    public Rabbit(String name, int age, String color, String breed) {
-        super(name, age, color);
+
+    public Rabbit(String name, int age, String color, PreedOfAnimals poroda) {
+        super(name, age, color, poroda);
+    }
+
+    @Override
+    public String toString() {
+        return "Rabbit"+super.toString();
     }
 
     @Override
