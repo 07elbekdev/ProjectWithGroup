@@ -3,7 +3,7 @@ package animal;
 import animal.Animal;
 
 public class Cat extends Animal implements AllAnimal {
-    public Cat(String name, int age, String color, String breed) {
+    public Cat(String name, int age, String color) {
         super(name, age, color);
     }
 

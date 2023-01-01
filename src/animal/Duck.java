@@ -1,9 +1,7 @@
 package animal;
 
-import animal.Animal;
-
 public class Duck extends Animal implements AllAnimal {
-    public Duck(String name, int age, String color, String breed) {
+    public Duck(String name, int age, String color) {
         super(name, age, color);
     }
 

@@ -1,7 +1,9 @@
 package main;
 
 import animal.BreedOfAnimals;
+import animal.Cat;
 import animal.Dog;
+import animal.Duck;
 
 import java.util.*;
 
@@ -14,13 +16,12 @@ public class Service {
         System.out.println("4) Find by age : ");
         System.err.println("5) Exit : ");
         int k = a.nextInt();
-        if (k == 1) {
-            System.out.println("Find by name : ");
-            String some = a.next();
-            Map<Integer, String> array = new HashMap();
-            if (Objects.equals(some, BreedOfAnimals.Boxers)) {
-                System.out.println(BreedOfAnimals.Boxers.toString());
-            }
+        System.out.println("Find by name : ");
+        ArrayList<Cat> arrayList = new ArrayList<>();
+        arrayList.add(new Cat("Junior", 14, "white"));
+        String na = a.next();
+        if (Objects.equals(na, BreedOfAnimals.Boxers)) {
+            arrayList.forEach(System.out::println);
         }
     }
 }
