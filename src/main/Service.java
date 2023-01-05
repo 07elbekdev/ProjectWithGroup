@@ -19,8 +19,8 @@ public class Service {
         System.out.println("Find by name : ");
         ArrayList<Cat> arrayList = new ArrayList<>();
         arrayList.add(new Cat("Junior", 14, "white"));
-        String na = a.next();
-        if (Objects.equals(na, BreedOfAnimals.Boxers)) {
+        String word = a.next();
+        if (Objects.equals(word, BreedOfAnimals.Boxers)) {
             arrayList.forEach(System.out::println);
         }
     }
